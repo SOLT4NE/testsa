@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta name = " viewport " content = " width = device - width , initial - scale = 1.0 " >
+    <title> WEB3 TEST </title>
+    <link rel = " stylesheet " href = " style.css ">
+
+<body>
+    <div class = " banner ">
+       <div class = " navbar " >
+     <img src = " logo.png " class = " logo ">
+     <ul> 
+          <li > <a href="index.html"> H0me </a> </li >
+          <li > <a href = "#" > St4king </a> </li >
+          <li > <a href="#"> C4sin0 </a> </li >
+          <li > <a href="sneakpeak.html"> SNEAK PEAKS </a> </li >
+          <li > <a href="#"> D0G M4P </a> </li >
+     </ul >
+</div>
+<div class="full-img" id="fullImgBox">
+    <img src="sneakpeaks/img1.png" id="fullImg">
+    <span onclick="CloseFullImg()">X</span>
+</div>
+<div class="img-gallery">
+    <img src="sneakpeaks/img1.png" onclick="openFullImg(this.src)">
+    <img src="sneakpeaks/img2.png" onclick="openFullImg(this.src)">
+    <img src="sneakpeaks/img3.png" onclick="openFullImg(this.src)">
+    <img src="sneakpeaks/img4.png" onclick="openFullImg(this.src)">
+    <img src="sneakpeaks/img5.png" onclick="openFullImg(this.src)">
+    <img src="sneakpeaks/img6.png" onclick="openFullImg(this.src)">
+</div>
+
+
+
+<script>
+
+ var fullImgBox = document.getElementById("fullImgBox");
+ var fullImg = document.getElementById("fullImg");
+ function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+ }
+ function CloseFullImg(){
+    fullImgBox.style.display = "none";
+ }
+
+</script>
+</body>
+</html>
